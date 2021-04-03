@@ -1,0 +1,30 @@
+th {
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+.transaction_history {
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 16px;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 800px;
+}
+.table_header {
+  background-color: #4caf50;
+  color: white;
+}
+
+.table_row {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  border: 1px solid #ddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.table_row:nth-of-type(odd) {
+  background-color: #f1f1f1;
+}

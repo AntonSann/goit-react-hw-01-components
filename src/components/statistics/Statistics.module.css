@@ -1,0 +1,23 @@
+.statistics {
+  margin: auto;
+  width: 400px;
+}
+.list {
+  display: flex;
+  list-style: none;
+  padding-left: 0px;
+}
+.block {
+  padding: 20px;
+}
+.title {
+  color: grey;
+  text-align: center;
+}
+.label {
+  display: block;
+}
+.percentage {
+  display: block;
+  width: 50px;
+}

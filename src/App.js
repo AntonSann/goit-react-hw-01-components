@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import Profile from './components/social-profile/User'
+import FriendList from './components/friend-list/FriendList';
+import Statistics from './components/statistics/Statistics.js';
+import TransactionHistory from './components/transaction-history/Transaction-history';
+import friends from './components/friend-list/friends.json';
+import user from './components/social-profile/user.json';
+import statisticalData from './components/statistics/statistical-data.json';
+import transactions from './components/transaction-history/transactions.json';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+    <div>
+        <Profile
+        name={user.name}
+        tag={user.tag}
+        location={user.location}
+        avatar={user.avatar}
+        stats={user.stats}
+        />
+
+        <Statistics stats={statisticalData} />
+        
+
+        <FriendList friends={friends} />
+
+        <TransactionHistory items={transactions} />
+    </div>);
+};
 
 export default App;

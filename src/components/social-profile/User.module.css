@@ -1,0 +1,42 @@
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  margin-top: 20px;
+  text-align: center;
+  padding: 20px;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.image {
+  width: 100%;
+  border-radius: 50%;
+}
+
+.stats {
+  list-style: none;
+  padding-left: 0px;
+}
+
+.label {
+  color: grey;
+  font-size: 16px;
+}
+
+.quantity {
+  color: grey;
+  font-size: 16px;
+}
+
+.tag {
+  color: grey;
+  font-size: 18px;
+}
+.location {
+  color: grey;
+  font-size: 16px;
+}
