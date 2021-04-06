@@ -6,12 +6,11 @@ import FriendStyles from './FriendList.module.css';
 const FriendList = ({friends}) =>(
     <ul className={FriendStyles.list}>
     {friends.map(({avatar, name, isOnline, id}) => (
-    <li className={FriendStyles.item} key = {id}>
         <FriendListItem 
+        key = {id}
         avatar={avatar} 
         name={name} 
         isOnline={isOnline} />
-    </li>
         ))}
     </ul>);
 
